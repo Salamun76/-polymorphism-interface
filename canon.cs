@@ -1,11 +1,16 @@
-class Canon : PrinterWindows
+using System;
+
+namespace polymorphismInterface
+{
+  public class Canon : IPrinterWindows
     {
-        public override void Show()
+        public void Show()
         {
             Console.WriteLine("Canon display dimension : 9.5*12");
         }
-        public override void Print()
+        public void Print()
         {
             Console.WriteLine("Canon printer printing...");
         }
     }
+}

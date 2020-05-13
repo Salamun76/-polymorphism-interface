@@ -1,11 +1,16 @@
-class Epson : PrinterWindows
+using System;
+
+namespace polymorphismInterface
+{
+  public class Epson : IPrinterWindows
     {
-        public override void Show()
+        public void Show()
         {
             Console.WriteLine("Epson display dimension : 10*11");
         }
-        public override void Print()
+        public void Print()
         {
             Console.WriteLine("Epson printer printing...");
         }
     }
+}

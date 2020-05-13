@@ -1,11 +1,16 @@
-class LaserJet : PrinterWindows
+using System;
+
+namespace polymorphismInterface
+{
+  public class LaserJet : IPrinterWindows
     {
-        public override void Show()
+        public void Show()
         {
             Console.WriteLine("LaserJet display dimension : 12*12");
         }
-        public override void Print()
+        public void Print()
         {
             Console.WriteLine("LaserJet printer printing...");
         }
     }
+}

@@ -1,11 +1,12 @@
-class PrinterWindows
+using System;
+
+namespace PolymorphismInterface
+{
+  public interface IPrinterWindows
     {
-        public virtual void Show()
-        {
-            Console.WriteLine("Printer display dimension");
-        }
-        public virtual void Print()
-        {
-            Console.WriteLine("Printer printing");
-        }
+        void Show(); /*{
+            Console.WriteLine("\nPrinter display dimension"); }*/
+        void Print(); /*{
+            Console.WriteLine("\nPrinter printing"); }*/
     }
+}
